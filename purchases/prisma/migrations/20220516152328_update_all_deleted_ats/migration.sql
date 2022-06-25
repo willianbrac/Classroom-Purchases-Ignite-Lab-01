@@ -1,0 +1,11 @@
+-- AlterTable
+ALTER TABLE "Customer" ALTER COLUMN "deletedAt" DROP NOT NULL,
+ALTER COLUMN "deletedAt" DROP DEFAULT;
+
+-- AlterTable
+ALTER TABLE "Product" ALTER COLUMN "deletedAt" DROP NOT NULL,
+ALTER COLUMN "deletedAt" DROP DEFAULT;
+
+-- AlterTable
+ALTER TABLE "Purchase" ALTER COLUMN "deletedAt" DROP NOT NULL,
+ALTER COLUMN "deletedAt" DROP DEFAULT;
